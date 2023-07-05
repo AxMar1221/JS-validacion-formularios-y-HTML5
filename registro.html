@@ -26,36 +26,36 @@
                 <fieldset>
                     <legend class="form__label">Información básica</legend>
                     <div class="input-container">
-                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required>
+                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required data-tipo="name">
                         <label class="input-label" for="name">Nombre</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">Este campo es requerido</span>
                     </div>
                     <div class="input-container">
-                        <input name="email" id="email" class="input" type="email" placeholder="Email" required>
+                        <input name="email" id="email" class="input" type="email" placeholder="Email" required data-tipo="email">
                         <label class="input-label" for="email">Email</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">Este campo es requerido</span>
                     </div>
                     <div class="input-container">
                         <input name="password" id="password" class="input" type="password" placeholder="Contraseña"
-                            required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{6,12}$"
-                            title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número">
+                            required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{6,12}$" data-tipo="password"
+                            title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula y un número">
                         <label class="input-label" for="password">Contraseña</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">Este campo es requerido</span>
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend class="form__label">Información personal</legend>
                     <div class="input-container">
                         <input name="birth" id="birth" class="input" type="date" placeholder="Fecha de nacimiento"
-                            required>
+                            required data-tipo="birth">
                         <label class="input-label" for="birth">Fecha de nacimiento</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">Este campo es requerido</span>
                     </div>
                     <div class="input-container">
                         <input name="phoneNumber" id="phoneNumber" class="input" type="number"
-                            placeholder="Número telefónico" required>
+                            placeholder="Número telefónico" >
                         <label class="input-label" for="phoneNumber">Número telefónico</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">Este campo es requerido</span>
                     </div>
                 </fieldset>
                 <fieldset>
@@ -63,17 +63,17 @@
                     <div class="input-container">
                         <input name="cep" id="cep" class="input" type="text" placeholder="CEP">
                         <label class="input-label" for="cep">Dirección completa</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">Este campo es requerido</span>
                     </div>
                     <div class="input-container">
                         <input name="city" id="city" class="input" type="text" placeholder="Ciudad">
                         <label class="input-label" for="city">Ciudad</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">Este campo es requerido</span>
                     </div>
                     <div class="input-container">
                         <input name="state" id="state" class="input" type="text" placeholder="Estado">
                         <label class="input-label" for="state">Estado</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">Este campo es requerido</span>
                     </div>
                 </fieldset>
                 <button class="button">Registrar</a>
@@ -81,7 +81,7 @@
         </section>
     </main>
 
-    <script src="./JS/validaciones.js"></script>
+    <script src="./JS/app.js" type="module"></script>
 </body>
 
 </html>
