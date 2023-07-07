@@ -52,8 +52,8 @@
                         <span class="input-message-error">Este campo es requerido</span>
                     </div>
                     <div class="input-container">
-                        <input name="phoneNumber" id="phoneNumber" class="input" type="number"
-                            placeholder="Número telefónico" >
+                        <input name="phoneNumber" id="phoneNumber" class="input" type="text" required pattern="\d{10}" minlength="10" maxlength="10" 
+                            placeholder="Número telefónico" data-tipo="number">
                         <label class="input-label" for="phoneNumber">Número telefónico</label>
                         <span class="input-message-error">Este campo es requerido</span>
                     </div>
@@ -61,17 +61,17 @@
                 <fieldset>
                     <legend class="form__label">Dirección</legend>
                     <div class="input-container">
-                        <input name="cep" id="cep" class="input" type="text" placeholder="CEP">
+                        <input name="cep" id="cep" class="input" type="text" placeholder="CEP" required pattern=[\s\S]{10,40} data-tipo="address">
                         <label class="input-label" for="cep">Dirección completa</label>
                         <span class="input-message-error">Este campo es requerido</span>
                     </div>
                     <div class="input-container">
-                        <input name="city" id="city" class="input" type="text" placeholder="Ciudad">
+                        <input name="city" id="city" class="input" type="text" placeholder="Ciudad" required pattern=[\s\S]{5,20} data-tipo="city">
                         <label class="input-label" for="city">Ciudad</label>
                         <span class="input-message-error">Este campo es requerido</span>
                     </div>
                     <div class="input-container">
-                        <input name="state" id="state" class="input" type="text" placeholder="Estado">
+                        <input name="state" id="state" class="input" type="text" placeholder="Estado" required pattern=[\s\S]{15,20} data-tipo="estate">
                         <label class="input-label" for="state">Estado</label>
                         <span class="input-message-error">Este campo es requerido</span>
                     </div>

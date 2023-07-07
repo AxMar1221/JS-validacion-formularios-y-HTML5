@@ -41,6 +41,22 @@ const errorMessages = {
     valueMissing: "Debes de comprobar tu mayoría de edad",
     customError: "Debes de tener al menos 18 años de edad",
   },
+  number: {
+    valueMissing: "Este campo no puede estar vacío",
+    patternMismatch: "El formato requerido es de 10 números"
+  },
+  address: {
+    valueMissing: "Este campo no puede estar vacío",
+    patternMismatch: "La dirección debe de contener mínimo 10 caracteres máximo 40"
+  },
+  city: {
+    valueMissing: "Este campo no puede estar vacío",
+    patternMismatch: "La dirección debe de contener mínimo 5 caracteres máximo 20"
+  },
+  estate: {
+    valueMissing: "Este campo no puede estar vacío",
+    patternMismatch: "La dirección debe de contener mínimo 5 caracteres máximo 20"
+  }
 };
 
 const validators = {
