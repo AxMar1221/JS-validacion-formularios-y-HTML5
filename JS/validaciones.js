@@ -53,7 +53,7 @@ const errorMessages = {
     valueMissing: "Este campo no puede estar vacío",
     patternMismatch: "La dirección debe de contener mínimo 5 caracteres máximo 20"
   },
-  estate: {
+  state: {
     valueMissing: "Este campo no puede estar vacío",
     patternMismatch: "La dirección debe de contener mínimo 5 caracteres máximo 20"
   }
